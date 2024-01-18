@@ -7,9 +7,10 @@ import java.util.*;
 // to be held and drawn.
 
 public class Drawing extends Object {
-    ArrayList<Drawable> shapes = new ArrayList<>();
+    private final ArrayList<Drawable> shapes;
 
     public Drawing() {
+        shapes = new ArrayList<>();
     }
 
     public void drawAll(Graphics2D g2) {

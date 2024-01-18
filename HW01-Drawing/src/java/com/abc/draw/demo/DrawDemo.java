@@ -31,18 +31,25 @@ public class DrawDemo {
             new Point(150.0, 300.0));
         drawing.append(t2);
 
-        Square s = new Square(new Point(200.0, 200.0), 300.0);
+        Square2 s = new Square2(new Point(200.0, 200.0), 300.0);
         s.setWidth(200.0); // just to see that this method works
         drawing.append(s);
+        System.out.println("Perimeter = " + GeomTools.calcPerim(s.getWidth(), s.getHeight()));
 
-        Rectangle rect1 = new Rectangle(new Point(400.0, 50.0), 300.0, 1.0);
-        rect1.setHeight(130.0); // just to see that this method works
-        rect1.setWidth(400.0);
+        Square2 s2 = new Square2(new Point(200.0, 200.0), 300.0);
+        s2.setWidth(200.0); // just to see that this method works
+        //s2.setSize(700, 50);
+        drawing.append(s);
+
+        Rectangle2 rect1 = new Rectangle2(new Point(400.0, 50.0), 300.0, 1.0);
+        //rect1.setHeight(130.0); // just to see that this method works
+        //rect1.setWidth(400.0);
         drawing.append(rect1);
 
-        Rectangle rect2 = new Rectangle(new Point(25.0, 250.0), 450.0, 600.0);
-        rect2.setHeight(130.0); // just to see that this method works
-        rect2.setWidth(400.0);
+        Rectangle2 rect2 = new Rectangle2(new Point(25.0, 250.0), 450.0, 600.0);
+        //rect2.setHeight(130.0); // just to see that this method works
+        //rect2.setWidth(400.0);
+        rect2.setSize(800, 200);
         drawing.append(rect2);
 
         return drawing;

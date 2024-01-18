@@ -4,6 +4,10 @@ import java.awt.*;
 
 import com.abc.draw.*;
 
+/**
+ * Implementation as a subclass of Square.
+ * Cons, the calc perimeter method does not work
+ */
 public class Rectangle extends Square implements Drawable{
 
     public Rectangle(Point point, double width, double height) {

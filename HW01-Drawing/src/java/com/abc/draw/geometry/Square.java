@@ -4,6 +4,10 @@ import java.awt.*;
 
 import com.abc.draw.*;
 
+/**
+ * Implementation as super class for Rectangle class.
+ * Cons see Rectangle
+ */
 public class Square implements Drawable {
     private double width;
     private double height;
